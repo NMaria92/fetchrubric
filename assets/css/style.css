@@ -1,4 +1,6 @@
-*, *::after, *::before{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +11,48 @@ html {
 }
 
 /* Typografi */
-@import url()
 
 /* Variables */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+article {
+    background: lightpink;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem;
+}
+
+article .dragoncontent {
+    display: flex;
+    gap: 1rem;
+}
+
+article img {
+    border-radius: 6px;
+    margin-right: 1rem;
+}
+
+.dragonText {
+    font-size: 18px;
+}
+
+article span {
+    font-weight: 900;
+    display: block;
+}
